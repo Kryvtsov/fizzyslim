@@ -1,6 +1,4 @@
 
-#hello-world
+#hello
 
-first try
-
-Hello every one! This is my first try at the github working. And I like it :)
+this is a test
