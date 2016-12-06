@@ -6,84 +6,343 @@
     font-family: Evogria;
     src: url('../fonts/Evogria/Evogria.otf');
 }
-
-html, body {
-    height: 100%;
+@font-face {
+    font-family: Gilroy;
+    src: url('../fonts/Gilroy/Gilroy-Light.otf');
+}
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf');
 }
 body {
-    background: #fff;
-    font-family:Ubuntu, sans-serif;
-    font-size: 16px;
-    color: #828282;
+    left: 0;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    font-family:BebasNeueRegular, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
     font-weight:400;
-    min-width: 320px;
+    padding: 0;
+    max-width: 1918px;
+    height: 1050px;
 }
-.dropdown-menu {
+#main {
+    background: url("../images/bg.png");
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
-    max-height: 125px;
 
-    overflow-y: scroll;
-
-    min-width: 339px;
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
 
 }
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    #speakers,
-    #events,
-    #form,
-    #contacts {
-        padding: 20px 0;
-    }
-	.speakers-head,
-    .speakers-footer {
-        margin: 20px 0;
-    }
-    .row-item-col {
-        margin: 20px 0;
-    }
-    .row-item {
-        margin-top: 30px;
-    }
-    #sponsors {
-        padding:20px 0 0;
-    }
-    #sponsors img {
-        margin-bottom:20px;
-    }
+h1 {
+    font-family: Evogria, sans-serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin: 164px auto 54px auto;
+}
+h2  {
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+h3 {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 36px;
+    text-align: center;
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	
+.container {
+    margin: auto;
 }
-@media only screen and (max-width : 600px) {
-    #header {
-        min-height: 300px;
-    }
-    .section-center {
-        max-width: 320px;
-    }
-    #header h1 {
-        font-size: 20px;
-    }
-    #header p {
-        font-size: 16px;
-    }
-    .section-btn {
-        font-size: 15px;
-    }
+.row {
+    margin-left: 26px;
+}
+.col-md-3.offer {
+    position: relative;
+    max-width: 239px;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 0;
+    padding:0;
+}
+.last {
+    margin: 0;
+}
+img {
+    margin:auto;
+    display: block;
+}
+.shadow {
+    position: absolute;
+    background: url("../images/offerbg.png") no-repeat;
+    width:260px;
+    height: 379px;
+    top: 270px;
+    left:-24px;
+    
+}
+.offerta {
+    margin-top:44px;
+
+}
+.price {
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+.price span {
+    font-size: 24px;
+}
+.number {
+    width: 61px;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-    .row-item {
-        margin-top:10px;
+.select2-container .select2-selection--single {
+    height:34px;
+}
+.select2-container--default .select2-results > .select2-results__options {
+    max-height: 154px;
+}
+.select2-container--default .select2-selection--single {
+    background: rgba(255,255,255,0);
+    border-radius: 0;
+    border: none;
+    border-bottom: 4px solid #fff;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+/*фон открытого поля select*/
+.select2-container--open .select2-selection--single {
+    background-color: transparent;
+}
+/*цвет открытого поля select*/
+.select2-container--open .select2-selection--single .select2-selection__rendered{
+    color: #fff;
+}
+/*скрываем placeholder*/
+li.select2-results__option:first-child{
+    display: none;
+}
+/*фон списка*/
+.select2-results__options,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected='true']{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 12px;
+    width: 40px;
+}
+/*цвет списка*/
+.select2-results__options{
+    color: #fff;
+    width: 122px;
+
+}
+.select2-results__option {
+    padding: 2px 12px;
+    border-radius: 8px;
+
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    margin-top: 16px;
+}
+.select2-container {
+    margin-left: -30px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 16px;
+}
+.select2-container--open .select2-dropdown--above,
+.select2-container--open .select2-dropdown--below{
+    border: none;
+    background: none;
+}
+.buy {
+    width: 100%;
+}
+
+/* Menu */
+.menu {
+    background: #fff;
+    right: -470px;
+    top:0;
+    position: absolute;
+    width: 470px;
+    padding: 0;
+    height: 1050px;
+    z-index: 6;
+}
+.icon-close {
+    cursor: pointer;
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 225px;
+}
+.icon-close img {
+    margin-left: 60px;
+    margin-top: 95px;
+}
+
+.icon-menu {
+    background: url("../images/buy.png") no-repeat center;
+    background-size: 24px 24px;
+    border: 4px solid #fff;
+    width: 67px;
+    height: 51px;
+    border-radius: 22px;
+    padding-top: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 28px;
+    transition: background-color .8s;
+    position: relative;
+}
+.icon-menu:hover {
+    
+    background: #fff445 url("../images/buy_hover.png") no-repeat center;
+    background-size: 32px 26px;
+    border-color: #fff445;
+   
+
+}
+.carello-title {
+    width: 470px;
+    height: 225px;
+    background: #ff943d;
+    padding-top: 76px;
+    position: relative;
+}
+.fizzy-slim {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    width: 348px;
+    padding: 8px 5px;
+    margin: 14px auto;
+}
+.fizzy-slim img {
+    float: left;
+}
+.offerta-product {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+p.offerta-ananas {
+    font-family: Gilroy, sans-serif;
+    color: #2f2e2e;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p.qta {
+    font-family: Gilroy, sans-serif;
+    color: #2f2e2e;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+}
+p.ananas-price {
+    font-family: 'Gilroy Bold', sans-serif;
+    color: #2f2e2e;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+}
+p.subtotale {
+    font-family: Gilroy, sans-serif;
+    color: #2f2e2e;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top:20px;
+    margin-left: 60px;
+    line-height: 1;
+}
+p.subtotale span {
+    font-size: 48px;
+}
+.button-carello {
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 16px;
+    text-align: center;
+}
+.button {
+    border-color: #faa21b;
+    border-radius: 5px;
+    background-color: #faa21b;
+    width: 299px;
+    height: 62px;
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .8s;
+}
+.button:hover {
+    background-color: #323232;
+    border-color:#323232;
+    cursor: pointer;
+}
+.doska {
+    background: url("../images/doska.png") no-repeat;
+    height: 117px;
+    width: 100%;
+    max-width: 1137px;
+    position: relative;
+    bottom: 230px;
+    left: -28px;
+    margin: 0 auto;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.blackout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 5;
+  display: none;
+}
+
+/* First point */
+
+@media only screen and (max-width : 1198px) {
+    .doska {
+        display: none;
     }
+
 }
