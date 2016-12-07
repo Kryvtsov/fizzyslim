@@ -25,11 +25,11 @@ body {
     font-weight:400;
     padding: 0;
     max-width: 1918px;
-    height: 1050px;
+    height: 100%;
 }
 #main {
     background: url("../images/bg.png");
-    height: 100%;
+    min-height: 1050px;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -176,6 +176,7 @@ li.select2-results__option:first-child{
 }
 .buy {
     width: 100%;
+    margin-bottom: 76px;
 }
 
 /* Menu */
@@ -311,8 +312,8 @@ p.subtotale span {
     width: 100%;
     max-width: 1137px;
     position: relative;
-    bottom: 230px;
-    left: -28px;
+    top: 354px;
+    left: -50px;
     margin: 0 auto;
 }
 ::-webkit-scrollbar {
